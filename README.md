@@ -1,27 +1,37 @@
 # AngularCourse
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+This is my training project form Vladilen Minin's Angular course
 
-## Development server
+## Project Features
+Backend is provided by Google Firebase
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+###In main layout:
+App has 2 pages: list of all posts and page of a single post
 
-## Code scaffolding
+Data is dynamically loaded from Firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+###In Admin layout
+Which can be accessed at https://angular-course-c2f25.web.app/admin
 
-## Build
+####Login page
+Admin authentication (you can use guest@guest.com / guestacc for access)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+####Dashboard page
 
-## Running unit tests
+Homepage for admin layout, accessed via navbar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+List of all posts
 
-## Running end-to-end tests
+Post title navigation 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Edit and delete buttons for each post
 
-## Further help
+####Creation page
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Accessed via navbar
+
+Post creation page, where you can type post title and author, and a quill-form for post content
+
+####Logout
+
+Accessed via navbar, deletes session and redirects to login page
